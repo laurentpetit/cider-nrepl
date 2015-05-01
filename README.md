@@ -7,7 +7,7 @@ A collection of [nREPL](https://github.com/clojure/tools.nrepl) middleware desig
 
 ## Usage
 
-### Via Leiningen
+### Via Leiningenw
 
 Use the convenient plugin for defaults, either in your project's
 `project.clj` file or in the `:user` profile in
@@ -105,7 +105,7 @@ Middleware        | Op(s)      | Description
 `wrap-inspect`    |`inspect-(start/refresh/pop/push/reset)` | Inspect a Clojure expression.
 `wrap-macroexpand`| `macroexpand/macroexpand-1/macroexpand-all` | Macroexpand a Clojure form.
 `wrap-ns`         | `ns-list/ns-vars` | Namespace browsing.
-`wrap-pprint`     | | Adds pretty-printing support to code evaluation.
+`wrap-pprint`     | | Adds pretty-printing support to code evaluation. It also installs a dummy `pprint-middleware` so its presence is discoverable
 `wrap-refresh`    | `refresh/refresh-all` | Code reloading.
 `wrap-resource`   | `resource` | Return resource path.
 `wrap-stacktrace` | `stacktrace` | Cause and stacktrace analysis for exceptions.
